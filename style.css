@@ -1,0 +1,65 @@
+body {
+  background: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  font-family: 'Roboto';
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  max-width: 70vw;
+}
+
+#container .row {
+  display: flex;
+}
+
+#container .row div {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.button {
+  padding: 24px 48px;
+  background: #96C9F4;
+  color: white;
+  border: none;
+}
+
+.canvas {
+  display: flex;
+  gap: 16px;
+}
+
+#mode-btn {
+  width: 50px;
+  height: 50px;
+  padding: 8px;
+  color: white;
+  border: solid white;
+}
+
+.rainbow-background {
+  background: linear-gradient(90deg,red, orange, yellow, green, blue, indigo, violet,indigo,blue, green,yellow,orange,red, red); 
+  background-size: 1000% 100%;  
+  animation: create-rainbow-gradient-shift 30s ease infinite;
+  text-align: center;
+}
+
+.black-background {
+  background: black;
+}
+
+@keyframes create-rainbow-gradient-shift{
+    0%{background-position:0% 50%}
+    100%{background-position:100% 100%}
+}
+
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
